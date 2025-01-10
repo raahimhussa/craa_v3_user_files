@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@components": ["src/ui/components/index.ts"],
+      "@layouts": ["src/ui/layouts/index.ts"],
+      "@forms": ["src/ui/components/forms/index.ts"],
+      "@hocs": ["src/hocs/index.ts"],
+      "@hooks": ["src/hooks/index.ts"],
+      "@utils": ["src/utils/index.ts"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/hooks/composeHooks.js"
+  ],
+  "exclude": ["node_modules"]
+}

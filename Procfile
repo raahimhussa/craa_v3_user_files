@@ -1,0 +1,1 @@
+web:  NODE_ENV=production ./node_modules/next/dist/bin/next start 
